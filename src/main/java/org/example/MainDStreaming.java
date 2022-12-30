@@ -8,10 +8,10 @@ import org.apache.spark.streaming.api.java.JavaDStream;
 import org.apache.spark.streaming.api.java.JavaReceiverInputDStream;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
 
-public class MainStreaming {
+public class MainDStreaming {
     public static void main(String[] args) throws InterruptedException {
         // spark, java, Windows configuration
-        System.setProperty("hadoop.home.dir", "c:/Program Files/hadoop");
+        //System.setProperty("hadoop.home.dir", "c:/Program Files/hadoop");
         Logger.getLogger("org.apache").setLevel(Level.WARN);
         Logger.getLogger("org.spark-project").setLevel(Level.WARN);
         Logger.getLogger("org.apache.spark.storage").setLevel(Level.ERROR);

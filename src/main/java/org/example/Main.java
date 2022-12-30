@@ -35,7 +35,7 @@ import static org.apache.spark.sql.functions.col;
 public class Main {
     public static void main(String[] args) {
         // spark, java, Windows configuration
-        System.setProperty("hadoop.home.dir", "c:/Program Files/hadoop");
+        //System.setProperty("hadoop.home.dir", "c:/Program Files/hadoop");
         Logger.getLogger("org.apache").setLevel(Level.WARN);
         Logger.getLogger("org.spark-project").setLevel(Level.WARN);
         SparkConf conf = new SparkConf().setAppName("SparkTest").setMaster("local[*]");
