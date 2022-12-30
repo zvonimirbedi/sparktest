@@ -3,7 +3,6 @@ package org.example;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.SparkConf;
-import org.apache.spark.streaming.Duration;
 import org.apache.spark.streaming.Durations;
 import org.apache.spark.streaming.api.java.JavaDStream;
 import org.apache.spark.streaming.api.java.JavaReceiverInputDStream;
@@ -25,7 +24,6 @@ public class MainStreaming {
         dStream
             .window(Durations.seconds(60))
             .print();
-
 
         sc.start();
         sc.awaitTermination();
